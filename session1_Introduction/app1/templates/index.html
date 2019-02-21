@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>{{x}} </title>
+<link rel="stylesheet" href="{{url_for('static', filename='mycss.css')}}"> </link>
+</head>
+
+<body>
+     <h1> Welcome </h1>
+     <p> {{y}} </p>
+	 
+	 <a href="/?page=about">About</a>
+	 <a href="/?page=register">Register</a>
+	 <a href="/?page=login">Login</a>
+	 <a href="/?page=profile">Profile</a>
+	 
+	  {% if args["page"] == "about": %}
+        {% include 'about.html' %}
+      {% elif args["page"] == "register": %}
+            {% include 'register.html' %}
+      {% elif args["page"] == "login": %}
+            {% include 'login.html' %}
+      {% elif args["page"] == "profile": %}
+            {% include 'profile.html' %}
+      
+      {% endif %}
+ 
+</body>
+
+</html>

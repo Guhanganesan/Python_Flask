@@ -1,0 +1,42 @@
+<h2> Profile </h2>
+<style>
+    table{border-collapse:collapse;}
+   tr,td{border:1px solid blue;}
+   td:nth-child(1){width:40px;}
+   td:nth-child(4){width:200px;}
+   td{background-color:pink;width:120px;height:40px;text-align:center;}
+   th{background-color:green;width:120px;height:40px;text-align:center;color:white;}
+ </style>
+<p>
+        <a href="/">Logout</a>
+       
+</p>
+
+{% if success=='success': %}
+  <p>Your Data Successfully updated........... </p>
+{% endif %}
+
+
+
+<table border ="1" class="table table-hover">
+    
+        <tr> <th>Id</th> <th>Name</th><th>Email</th><th>Password</th><th>Timing</th><th>Update</th>
+        <th>Delete</th> </tr>
+    
+   {% for i in home %}
+       <tr> 
+            <td>{{ i[0]  }}</td>
+            <td>{{ i[1]  }}</td>
+            <td>{{ i[2]  }}</td>
+            <td>{{ i[3]  }}</td>
+            <td>{{ i[4]  }}</td>
+            <td> <a href="/?update=update&id={{i[0]}}">Update </a></td>
+            <td>
+            <form action="/">
+                  <input name="id" type="hidden" value={{i[0]}} > 
+                  <input type="submit" name="delete" value="delete">
+            </form>
+        </td>
+        </tr>
+   {% endfor %}
+     </table>

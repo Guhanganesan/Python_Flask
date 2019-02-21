@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>{{x}}</title>
+<!--
+<link rel="stylesheet" href="{{url_for('static',filename='mycss.css')}}"> </link>
+-->
+<link rel="stylesheet" href="{{url_for('static',filename='bootstrap.css')}}"></link>
+<style>
+.bg{background-color:pink;}
+.title{background-color:#150B7A; color:white;text-align:center;}
+.nav{background-color:#00D239; color:white;text-align:center;}
+</style>
+</head>
+
+
+<body>
+      
+<div class="container bg">
+    <div class="row title">
+	    <div class="col-sm-12">
+			<h1> Welcome to Flask Application </h1>
+		</div>
+	</div>
+	<div class="row">
+	    <div class="col-sm-3 nav">
+		    <h3>Menu</h3>
+				<ul class="list-group" style="margin-left:20px;">
+							<li class="list-group-item"><a href='/?page=about'>About</a></li>
+							<li class="list-group-item"><a href='/?page=register'>Register</a></li>
+							<li class="list-group-item"><a href='/?page=login'>Login</a></li>
+							<li class="list-group-item"><a href='/?page=events'>Events</a></li>
+							<li class="list-group-item"><a href='/?page=sports'>Sports</a></li>
+				</ul>
+				  
+		</div>
+				               <!-- contents ... -->
+		<div class="col-sm-9">
+			                   
+			           {% if success=='success': %}
+								<p>Your Data Successfully Submiited........... </p>
+						
+					   {% endif %}
+
+					   {% if dl=='success': %}
+					   <p>Your Data Successfully Deleted........... </p>
+			   
+			          {% endif %}
+			  
+
+					  {% if args["page"] == "about": %}
+						{% include 'about.html' %}
+					  {% elif args["page"] == "register": %}
+							{% include 'register.html' %}
+					  {% elif args["page"] == "login": %}
+							{% include 'login.html' %}
+					  {% elif args["page"] == "profile": %}
+							{% include 'profile.html' %}
+					  
+					  {% endif %}				  
+				 
+		</div>
+	</div>
+</div>
+	  
+ 
+</body>
+
+</html>

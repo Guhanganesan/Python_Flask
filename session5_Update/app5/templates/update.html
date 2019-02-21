@@ -1,0 +1,39 @@
+<h2>Profile</h2>
+
+<style>
+   table{border-collapse:collapse;}
+   tr,td{border:1px solid blue;}
+   td:nth-child(1){width:40px;}
+   td:nth-child(4){width:200px;}
+   td{background-color:pink;width:120px;height:40px;text-align:center;}
+   th{background-color:green;width:120px;height:40px;text-align:center;color:white;}
+ </style>
+  
+
+
+<table border = 1>
+    
+<tr> <th>Id</th> <th>Name</th><th>Email</th><th>Password</th><th>Update</th></tr>
+<form action="/">  
+{% for i in home %}
+<tr> 
+     <td> <input value='{{i[0]}}' name="id"></td>
+     <td> <input value='{{i[1]}}' name="name"></td>
+     <td> <input value='{{i[2]}}' name="email"></td>
+     <td> <input value='{{i[3]}}' name="pass"></td>
+     <td> <input type="submit" name="updatedata" value="updatedata">
+</tr>
+</form>  
+{% endfor %}
+
+</table>
+
+
+
+
+     
+{% if myupdated_status=='success': %}
+<h2>Your Data successfully updated</h2>
+{% endif %}
+
+

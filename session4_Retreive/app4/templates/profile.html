@@ -1,0 +1,27 @@
+<h2> Profile </h2>
+
+<style>
+    table{border-collapse:collapse;}
+   tr,td{border:1px solid blue;}
+   td:nth-child(1){width:40px;}
+   td:nth-child(4){width:200px;}
+   td{background-color:pink;width:120px;height:40px;text-align:center;}
+   th{background-color:green;width:120px;height:40px;text-align:center;color:white;}
+ </style>
+
+<table border ="1" class="table table-hover">
+    
+        <tr> <th>Id</th> <th>Name</th><th>Email</th><th>Password</th></tr>
+    
+   {% for i in home %}
+       <tr> 
+       
+            <td>{{ i[0]  }}</td>
+            <td>{{ i[1]  }}</td>
+            <td>{{ i[2]  }}</td>
+            <td>{{ i[3]  }}</td>
+            
+       </tr>
+   {% endfor %}
+     </table>
+
