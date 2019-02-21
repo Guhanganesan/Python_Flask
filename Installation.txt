@@ -1,0 +1,29 @@
+Flask Installation:-
+
+1. Go C:\Python37\Scripts\pip install virtualenv (make sure that virtualenv is available or not)
+
+2. Go to D:\myfolder ( here you are going to create new app)
+
+3. cd myfolder
+
+4. D:\myfolder\ virtualenv venv 
+
+5. cd venv
+
+6. mkdir myapp
+
+7. cd myapp
+
+8. touch app.py (create python app file)
+
+9. cd.. (go back)
+
+10. cd scripts (go into scripts)
+
+11. activate 
+
+12. venv\ pip install flask
+
+13. cd myapp
+
+14. python app.py (run the app)
