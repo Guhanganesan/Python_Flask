@@ -1,29 +1,35 @@
 Flask Installation:-
+Open your command prompt follow the steps to install virtualenv and flask to run Flask Wep Applications
 
-1. Go C:\Python37\Scripts\pip install virtualenv (make sure that virtualenv is available or not)
+1. Go to C:\Python37\Scripts\pip install virtualenv 
+ (make sure that virtualenv is available or not, if it is not availble you have install the virtualenv)
 
-2. Go to D:\myfolder ( here you are going to create new app)
+2. Go to D:\myfolder (Create new empty folder)
 
-3. cd myfolder
+3. cd myfolder (move inside the folder)
 
-4. D:\myfolder\ virtualenv venv 
+4. D:\myfolder\ virtualenv venv    (install the supporting packages..)
 
-5. cd venv
+5. D:\myfolder\ cd venv     (move inside the venv folder)
 
-6. mkdir myapp
+6. D:\myfolder\ venv\ mkdir myapp        (create new folder as myapp  )
 
-7. cd myapp
+7. D:\myfolder\ venv\ cd myapp        ( move inside the folder)
 
-8. touch app.py (create python app file)
+8. D:\myfolder\venv \myapp\ touch app.py (create python app file)
 
-9. cd.. (go back)
+9. D:\myfolder\venv \myapp \cd.. (go back)
 
-10. cd scripts (go into scripts)
+10.D:\myfolder\ venv\ cd Scripts (go into scripts)
 
-11. activate 
+11. D:\myfolder\ venv\ Scripts\ activate 
 
-12. venv\ pip install flask
+12. D:\myfolder\ venv\ Scripts\ cd.. (go back)
 
-13. cd myapp
+13. D:\myfolder\ venv\ pip install flask
 
-14. python app.py (run the app)
+14.D:\myfolder\ venv\  cd myapp   (move into the myapp folder) 
+
+15. D:\myfolder\ venv\ myapp\ python app.py       (run the app)
+
+16. Check in your browser: http://127.0.0.1:5000/
