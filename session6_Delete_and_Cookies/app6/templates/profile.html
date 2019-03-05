@@ -20,7 +20,7 @@
 
 <table border ="1" class="table table-hover">
     
-        <tr> <th>Id</th> <th>Name</th><th>Email</th><th>Password</th><th>Timing</th><th>Update</th>
+        <tr> <th>Id</th> <th>Name</th><th>Email</th><th>Password</th><th>Update</th>
         <th>Delete</th> </tr>
     
    {% for i in home %}
@@ -29,7 +29,6 @@
             <td>{{ i[1]  }}</td>
             <td>{{ i[2]  }}</td>
             <td>{{ i[3]  }}</td>
-            <td>{{ i[4]  }}</td>
             <td> <a href="/?update=update&id={{i[0]}}">Update </a></td>
             <td>
             <form action="/">
