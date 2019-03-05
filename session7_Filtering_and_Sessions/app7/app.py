@@ -2,12 +2,9 @@ from flask import Flask, render_template, url_for, request,make_response,session
 import mysql.connector
 app = Flask(__name__)
 
-#create database and table in mysql
-#create database python_db;
-#create table std_data(id int auto_increment, primary key(id), name varchar(30), email varchar(30),pass varchar(30));
-#create table login_details(id int, email varchar(30),
-#    pass varchar(30), timing timestamp default current_timestamp, counting
-#    varchar(30) default 1, foreign key(id) references std_data(id));
+#   ---- create login_details table in python_db -------------
+#    create table login_details(id int, email varchar(30), pass varchar(30), timing timestamp default current_timestamp, 
+#    foreign key(id) references std_data(id));
 
 db=mysql.connector.connect(host="localhost",user="root",password="root",database="python_db")
 cursor=db.cursor()
@@ -53,7 +50,7 @@ def index():
 	
 	elif request.args.get('update') =='update':
 		id=request.args.get('id')
-		sql = "select * from std_data where id='{}'".format(id)
+		sql = "select * from std_data where id='{0}'".format(id)
 		cursor.execute(sql)
 		view_data=cursor.fetchall()
 		return render_template('update.html',home=view_data) 
