@@ -33,3 +33,6 @@ Open your command prompt follow the steps to install virtualenv and flask to run
 15. D:\myfolder\ venv\ myapp\ python app.py       (run the app)
 
 16. Check in your browser: http://127.0.0.1:5000/
+
+Note:-
+Any query and help mail to : guhan.g@3edge.in
