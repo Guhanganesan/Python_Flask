@@ -4,7 +4,7 @@ Open your command prompt follow the steps to install virtualenv and flask to run
 1. Go to C:\Python37\Scripts\pip install virtualenv 
  (make sure that virtualenv is available or not, if it is not availble you have install the virtualenv)
 
-2. Go to D:\myfolder (Create new empty folder)
+2. Go to D:\myfolder (Create new empty folder as myfolder in D drive then move into the myfolder )
 
 3. cd myfolder (move inside the folder)
 
