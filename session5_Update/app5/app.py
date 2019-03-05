@@ -33,7 +33,7 @@ def index():
 		return render_template('profile.html',home=view_data)
 	elif request.args.get('update') =='update':
 		id=request.args.get('id')
-		sql = "select * from std_data where id='{}'".format(id)
+		sql = "select * from std_data where id='{0}'".format(id)
 		cursor.execute(sql)
 		view_data=cursor.fetchall()
 		return render_template('update.html',home=view_data) 
