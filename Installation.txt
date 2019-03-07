@@ -37,4 +37,4 @@ Open your command prompt follow the steps to install virtualenv and flask to run
 To Change IP Address: python -m flask run --host=172.16.3.64
 
 Note:-
-Any query and help mail to : guhan.g@3edge.in
+Any query and help mail to : guhang990@gmail.com
