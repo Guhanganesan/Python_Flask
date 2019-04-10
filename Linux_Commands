@@ -1,0 +1,84 @@
+Linux Commands:
+
+ls
+   -->bin
+   -->dev
+   -->tmp
+   -->home
+   -->var
+   -->root etc
+   
+cd home
+ls
+   -->ubuntu
+   
+cd ubuntu
+ls
+   -->Desktop
+   -->Documents
+   -->Downloads
+   etc..
+   
+Move Documents:-
+
+				cd Documents
+
+Create new folder:-
+
+				mkdir Guhan
+				
+Create new file:-
+
+				touch test.txt
+				
+Edit file:-
+
+				sudo gedit test.txt
+				
+Close file:-
+
+				ctrl+x
+				|
+				|-->Y (yes)
+				|
+				|-->N (No)
+				
+				
+Remove file:-
+
+				rm test.txt
+				
+Go back:-
+
+				cd ..
+				
+Test Connection with other server:-
+
+                ping www.google.com
+				
+				
+Install Software:-
+
+				sudo apt-get install phpmyadmin
+				
+				
+Unzip file:-
+
+				tar xzvf Guhan.tar.gz
+				
+Get Url(from start to current):
+
+            pwd
+			
+			
+Root :-
+            sudo -i
+			
+Ubuntu:-
+
+           su ubuntu
+		   
+		   
+Move File from One directory to another directory:-
+
+			sudo mv file_name directory_url
