@@ -82,3 +82,57 @@ Ubuntu:-
 Move File from One directory to another directory:-
 
 			sudo mv file_name directory_url
+			
+               SYSTEM INFORMATIONS:
+			   
+/bin/ chmod
+      bash
+	  dir
+	  echo
+	  ls
+	  mv
+	  nano
+	  etc.....
+	  
+	  
+/home/ubuntu/Documents
+            Downloads
+			Music
+			ect...
+			
+			
+/var/log/apache2/error.log
+       /mysql/error.log
+
+/etc/apache2/sites-enabled
+            apache2.config
+            port.config
+
+/etc/php
+    python
+    perl
+    ssh
+    ssl
+
+/sys/module/rfkil
+            processor
+			ipv6
+			
+/sys//kernal/security
+
+/sys/devices/system/cpu
+
+/usr/share/nodejs
+           npm
+		   python
+		   
+/modules/yelp,
+         nano
+		 mysql
+		 xml
+		 
+------------------------------------------------------------------------------------------
+
+||
+||
+
