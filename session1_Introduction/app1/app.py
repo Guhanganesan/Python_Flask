@@ -48,5 +48,9 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/index1')
+def index1():
+    return render_template("index.html", user="Guhan", password="1234")
+
     
  """
