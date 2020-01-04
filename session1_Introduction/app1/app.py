@@ -35,4 +35,15 @@ def name(x):
 def user(x,y):
     return "Hello Mr. {} and your pass is {}".format(x,y)
     
+
+@app.route('/check/<x>/<y>')
+def check(x,y):
+	if x=="Guhan" and y=="1234":
+		return "Hello Mr. {} and your pass is {} you are eligible to access".format(x,y)
+	else:
+		return "Hello Mr. {} and your pass is {}... But sorry...".format(x,y)
+
+
+
+    
  """
