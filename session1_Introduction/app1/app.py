@@ -43,6 +43,9 @@ def check(x,y):
 	else:
 		return "Hello Mr. {} and your pass is {}... But sorry...".format(x,y)
 
+@app.route('/index')
+def index():
+    return render_template("index.html")
 
 
     
