@@ -51,6 +51,23 @@ def index():
 @app.route('/index1')
 def index1():
     return render_template("index.html", user="Guhan", password="1234")
-
     
- """
+print("before import")
+import math
+
+print("before functionA")
+def functionA():
+    print("Function A")
+
+print("before functionB")
+def functionB():
+    print("Function B {}".format(math.sqrt(100)))
+
+
+if __name__=="__main__":
+	#functionA()
+	#functionB()
+	app.run(debug = True)
+
+
+"""
