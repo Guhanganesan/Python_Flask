@@ -133,6 +133,47 @@ Move File from One directory to another directory:-
 		 
 ------------------------------------------------------------------------------------------
 
-||
-||
+ifconfig
+clear
+apt-get update && apt-get upgrade
+uname
+uname -r
+uname -a
+history
+ls
+cd ..
+ls -l test
+->admin rwx 4+2+1
+->group rx  4+2
+->public rrx
+1-> execute 
+2-> write   
+4-> read
+1+2+4 =7
+
+alias
+echo "Hello"
+alias ec="echo"
+ec "hello"
+unalias ec
+whereis git
+service sshd status
+service sshd stop
+service sshd start
+service sshd restart
+df     -> check volumes
+df -h  -> human readable
+du 
+du -h 
+du -s *.txt  -> files
+passwd       ->changing the passwd
+old :
+new :
+retype:
+
+man wget
+wget url   => for download
+who
+man shutdown
+shutdown -r
 
