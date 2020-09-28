@@ -1,0 +1,14 @@
+ git status
+ git branch bheem
+ git checkout bheem
+ git status
+ git add .\session_storage.html
+ git status
+ git commit -m "Add this session storage"
+ git push origin bheem
+ git checkout master
+ git merge bheem
+ git status
+ git checkout bheem
+ git status
+ git branch --list
