@@ -10,6 +10,10 @@ Open your command prompt follow the steps to install virtualenv and flask to run
 
 4. D:\myfolder\ virtualenv venv    (install the supporting packages..)
 
+If not recognosed: set path 
+
+set path=C:\Users\admin\AppData\Roaming\Python\Python39\Scripts  (in your command prompt)
+
 5. D:\myfolder\ cd venv     (move inside the venv folder)
 
 6. D:\myfolder\ venv\ mkdir myapp        (create new folder as myapp  )
