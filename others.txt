@@ -1,0 +1,35 @@
+from flask import Flask, redirect, url_for, abort
+
+app = Flask(__name__)
+
+@app.route('/admin')  
+def admin():  
+    return 'admin'  
+  
+@app.route('/librarion')  
+def librarion():  
+    return 'librarion'  
+  
+@app.route('/student')  
+def student():  
+    return 'student'  
+
+@app.route('/error')  
+def error():  
+    abort(401)
+  
+@app.route('/user/<name>')  
+def user(name):  
+    if name == 'admin':  
+        return redirect(url_for('admin'))  
+    elif name == 'librarion':  
+        return redirect(url_for('librarion'))  
+    elif name == 'student':  
+        return redirect(url_for('student'))
+    else:
+        return redirect(url_for('error'))
+
+------------------------------------------
+
+
+
